@@ -172,12 +172,12 @@
 
       .hero-mandala {
         position: absolute;
-        width: 350px;
-        height: 350px;
-        top: 50%;
+        width: min(85vw, 520px);
+        height: min(85vw, 520px);
+        top: calc(50% - 1.25rem);
         left: 50%;
         transform: translate(-50%, -50%);
-        opacity: 0.1;
+        opacity: 0.15;
         animation: rotateMandala 60s linear infinite;
         z-index: 0;
         pointer-events: none;
@@ -344,19 +344,19 @@
 
       .family-motif {
         position: absolute;
-        width: 150px;
-        height: 150px;
-        opacity: 0.06;
+        width: 180px;
+        height: 180px;
+        opacity: 0.15;
         top: 20%;
         animation: floatMotif 7s ease-in-out infinite alternate;
         pointer-events: none;
       }
 
       .motif-left {
-        left: -50px;
+        left: -30px;
       }
       .motif-right {
-        right: -50px;
+        right: -30px;
       }
 
       @keyframes floatMotif {
