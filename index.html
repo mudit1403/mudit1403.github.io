@@ -170,26 +170,6 @@
         }
       }
 
-      .hero-mandala {
-        position: absolute;
-        width: min(85vw, 520px);
-        height: min(85vw, 520px);
-        top: calc(50% - 1.25rem);
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0.15;
-        animation: rotateMandala 60s linear infinite;
-        z-index: 0;
-        pointer-events: none;
-      }
-      @keyframes rotateMandala {
-        from {
-          transform: translate(-50%, -50%) rotate(0deg);
-        }
-        to {
-          transform: translate(-50%, -50%) rotate(360deg);
-        }
-      }
 
       .hero .blessing {
         font-family: var(--font-sans);
@@ -342,31 +322,6 @@
         overflow: hidden;
       }
 
-      .family-motif {
-        position: absolute;
-        width: 180px;
-        height: 180px;
-        opacity: 0.15;
-        top: 20%;
-        animation: floatMotif 7s ease-in-out infinite alternate;
-        pointer-events: none;
-      }
-
-      .motif-left {
-        left: -30px;
-      }
-      .motif-right {
-        right: -30px;
-      }
-
-      @keyframes floatMotif {
-        from {
-          transform: translateY(0);
-        }
-        to {
-          transform: translateY(-8px);
-        }
-      }
 
       .family-inner {
         max-width: 800px;
@@ -916,36 +871,6 @@
   <body>
     <section class="hero" id="hero">
       <div class="hero-bg" id="hero-bg"></div>
-      <svg
-        class="hero-mandala"
-        viewBox="0 0 100 100"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>Decorative mandala</title>
-        <circle
-          cx="50"
-          cy="50"
-          r="48"
-          fill="none"
-          stroke="var(--gold)"
-          stroke-width="0.5"
-          stroke-dasharray="2 4"
-        />
-        <circle
-          cx="50"
-          cy="50"
-          r="42"
-          fill="none"
-          stroke="var(--gold)"
-          stroke-width="0.2"
-        />
-        <path
-          d="M50 8 v84 M8 50 h84 M20 20 l60 60 M20 80 l60 -60"
-          stroke="var(--gold)"
-          stroke-width="0.2"
-          fill="none"
-        />
-      </svg>
       <p class="blessing">ॐ श्री गणेशाय नम:</p>
       <div class="hero-invitation">
         <div class="gold-divider">
@@ -1273,32 +1198,6 @@
     </section>
 
     <section class="family" id="family">
-      <svg
-        class="family-motif motif-left"
-        viewBox="0 0 50 50"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>Decorative motif left</title>
-        <path
-          d="M25 0 C25 20, 0 25, 0 25 C0 25, 25 30, 25 50 C25 30, 50 25, 50 25 C50 25, 25 20, 25 0 Z"
-          fill="none"
-          stroke="var(--gold)"
-          stroke-width="1"
-        />
-      </svg>
-      <svg
-        class="family-motif motif-right"
-        viewBox="0 0 50 50"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>Decorative motif right</title>
-        <path
-          d="M25 0 C25 20, 0 25, 0 25 C0 25, 25 30, 25 50 C25 30, 50 25, 50 25 C50 25, 25 20, 25 0 Z"
-          fill="none"
-          stroke="var(--gold)"
-          stroke-width="1"
-        />
-      </svg>
       <div class="family-inner">
         <div class="reveal">
           <div class="family-grid">
