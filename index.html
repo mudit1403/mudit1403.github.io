@@ -30,6 +30,9 @@
         --gold: #c9a84c;
         --gold-light: #e8d48b;
         --gold-pale: rgba(201, 168, 76, 0.15);
+        --mauve: #7d5a6e;
+        --mauve-deep: #6a4a5d;
+        --mauve-light: #a8899d;
         --bg-ivory: #f5f0e8;
         --bg-white: #ffffff;
         --bg-dark: #1a1a1a;
@@ -63,7 +66,7 @@
         font-family: var(--font-serif);
         font-weight: 500;
         font-size: clamp(1.6rem, 4vw, 2.5rem);
-        color: var(--text-primary);
+        color: var(--mauve);
         letter-spacing: 0.03em;
       }
 
@@ -72,7 +75,7 @@
         align-items: center;
         justify-content: center;
         gap: 12px;
-        margin: 1.5rem 0;
+        margin: 1rem 0;
       }
 
       .gold-divider .line {
@@ -116,7 +119,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding: 2rem;
+        padding: 2rem 2rem 4.5rem;
         position: relative;
         background-color: var(--bg-ivory);
         z-index: 1;
@@ -193,7 +196,7 @@
         font-size: 0.65rem;
         letter-spacing: 0.4em;
         color: var(--gold);
-        margin-bottom: 1.5rem;
+        margin-bottom: 0.8rem;
         opacity: 1;
       }
 
@@ -202,7 +205,7 @@
         font-weight: 500;
         font-size: clamp(3rem, 9vw, 6rem);
         line-height: 1.1;
-        color: var(--text-primary);
+        color: var(--mauve-deep);
         opacity: 1;
       }
 
@@ -238,14 +241,14 @@
       .hero .hero-venue {
         font-family: var(--font-serif);
         font-style: italic;
-        font-size: clamp(0.9rem, 1.8vw, 1.1rem);
-        color: var(--text-light);
+        font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+        color: var(--text-primary);
         margin-top: 0.5rem;
         opacity: 1;
       }
 
       .hero-invitation {
-        margin-top: 1.5rem;
+        margin-top: 0.8rem;
         text-align: center;
         max-width: 600px;
       }
@@ -255,8 +258,8 @@
         font-style: italic;
         font-size: clamp(0.9rem, 1.8vw, 1.1rem);
         color: var(--text-medium);
-        line-height: 1.8;
-        margin-bottom: 0.3rem;
+        line-height: 1.6;
+        margin-bottom: 0.2rem;
       }
 
       .hero-invitation .elder-names {
@@ -264,16 +267,16 @@
         font-weight: 500;
         font-size: clamp(1rem, 2vw, 1.2rem);
         color: var(--text-primary);
-        line-height: 1.8;
-        margin-bottom: 0.3rem;
+        line-height: 1.6;
+        margin-bottom: 0.2rem;
       }
 
       .hero-invitation .bride-parents {
         font-family: var(--font-sans);
         font-size: 0.8rem;
         color: var(--text-medium);
-        line-height: 1.8;
-        margin-bottom: 0.5rem;
+        line-height: 1.6;
+        margin-bottom: 0.3rem;
       }
 
       .scroll-hint {
@@ -411,7 +414,7 @@
 
       .family-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 3rem;
         text-align: center;
         margin-top: 3rem;
@@ -508,6 +511,7 @@
         padding: 2.5rem 1.5rem 2rem 1.5rem;
         max-width: 320px;
         text-align: center;
+        box-shadow: 0 2px 12px rgba(201, 168, 76, 0.08);
         transition:
           transform 0.4s ease,
           box-shadow 0.4s ease;
@@ -517,11 +521,11 @@
       .couple-illustration {
         display: flex;
         justify-content: center;
-        margin-bottom: 0.8rem;
+        margin-bottom: 1rem;
       }
 
       .couple-illustration svg {
-        width: 100px;
+        width: 120px;
         height: auto;
       }
 
@@ -565,7 +569,7 @@
         transform: translateY(-3px);
         box-shadow:
           0 8px 24px rgba(201, 168, 76, 0.15),
-          0 0 15px rgba(201, 168, 76, 0.2);
+          0 0 15px rgba(201, 168, 76, 0.1);
       }
 
       .timeline-event:nth-child(odd) .timeline-card {
@@ -591,12 +595,30 @@
         transition-delay: 0.45s;
       }
 
+      /* Themed top accents per ceremony */
+      .timeline-event:nth-child(1) .timeline-card {
+        border-top: 3px solid #7b9e87;
+        background: linear-gradient(180deg, rgba(123, 158, 135, 0.06) 0%, var(--bg-white) 30%);
+      }
+      .timeline-event:nth-child(2) .timeline-card {
+        border-top: 3px solid var(--gold);
+        background: linear-gradient(180deg, rgba(201, 168, 76, 0.06) 0%, var(--bg-white) 30%);
+      }
+      .timeline-event:nth-child(3) .timeline-card {
+        border-top: 3px solid #e8c840;
+        background: linear-gradient(180deg, rgba(232, 200, 64, 0.06) 0%, var(--bg-white) 30%);
+      }
+      .timeline-event:nth-child(4) .timeline-card {
+        border-top: 3px solid #800020;
+        background: linear-gradient(180deg, rgba(128, 0, 32, 0.06) 0%, var(--bg-white) 30%);
+      }
+
       .timeline-card .event-name {
         font-family: var(--font-serif);
         font-weight: 600;
-        font-size: 1.15rem;
+        font-size: 1.3rem;
         letter-spacing: 0.08em;
-        color: var(--text-primary);
+        color: var(--mauve-deep);
         margin-bottom: 0.8rem;
       }
 
@@ -612,7 +634,7 @@
       .timeline-card .event-date {
         font-family: var(--font-sans);
         font-weight: 500;
-        font-size: 0.6rem;
+        font-size: 0.65rem;
         letter-spacing: 0.25em;
         text-transform: uppercase;
         color: var(--gold);
@@ -621,9 +643,9 @@
 
       .timeline-card .event-detail {
         font-family: var(--font-sans);
-        font-weight: 300;
-        font-size: 0.8rem;
-        color: var(--text-light);
+        font-weight: 400;
+        font-size: 0.85rem;
+        color: var(--text-medium);
         line-height: 1.8;
       }
 
@@ -845,6 +867,22 @@
       /* ── Responsive ── */
 
       @media (max-width: 600px) {
+        .hero {
+          padding: 1.5rem 1.5rem 4rem;
+        }
+
+        .hero .blessing {
+          margin-bottom: 0.5rem;
+        }
+
+        .hero-invitation {
+          margin-top: 0.5rem;
+        }
+
+        .gold-divider {
+          margin: 0.6rem 0;
+        }
+
         .family {
           padding: 4rem 1.5rem;
         }
@@ -942,16 +980,10 @@
         <span class="line"></span>
       </div>
       <h1 class="couple-name first">Mudit</h1>
-      <div class="hero-invitation">
-        <p class="bride-parents">
-          Grand Son of Late Smt. Angoori Devi &amp; Late Shri Babulal Ji Goyal
-        </p>
-      </div>
       <p class="ampersand">&</p>
       <h1 class="couple-name second">Prashansa</h1>
       <div class="hero-invitation">
         <p class="bride-parents">
-          Grand Daughter of Late Smt. Shanti Devi &amp; Late Shri Ganga Prasad Ji Agarwal<br />
           Daughter of Mrs. Himani &amp; Mr. Ved Prakash Agarwal
         </p>
       </div>
@@ -1271,22 +1303,22 @@
         <div class="reveal">
           <div class="family-grid">
             <div>
-              <p class="side-label">With Best Compliments From</p>
+              <p class="side-label">With Love From</p>
               <p class="member">Twinkle &amp; Shubham Garg</p>
             </div>
             <div>
-              <p class="side-label">Maternal Side</p>
-              <p class="member">Kamlesh &amp; B.S Bansal Ji</p>
-              <p class="member">Vinita &amp; Sanjay Ji</p>
-              <p class="member">Monika &amp; Sachin Ji</p>
-              <p class="member">Gungun, Yeshu, Manu &amp; All Bansal Family</p>
-            </div>
-            <div>
-              <p class="side-label">Paternal Side</p>
-              <p class="member">Hariom, Deepak, Alpesh, Harshit</p>
-              <p class="member">Laksh &amp; All Goyal Family</p>
+              <p class="side-label">With Best Compliments</p>
+              <p class="member">Goyal Family &amp; Friends</p>
             </div>
           </div>
+          <p style="
+            font-family: var(--font-sans);
+            font-weight: 400;
+            font-size: 0.8rem;
+            color: var(--text-medium);
+            margin-top: 2.5rem;
+            letter-spacing: 0.05em;
+          ">Gupta RK &amp; Associates, Company Secretaries</p>
         </div>
       </div>
     </section>
