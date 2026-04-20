@@ -1,334 +1,1362 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Mudit Gupta</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<style type="text/css">
-		body {
-			background: #f0f0f0;
-			margin: 0;
-			padding: 0;
-			
-			font-family: 'Helvetica Neue', Helvetica, Arial;
-			line-height: 18px;
-			font-size: 14px;
-			
-			color: #222;
-		}
-		h1, h2, h3, h4 {
-			margin: 0 0 15px 0;
-			padding: 0;
-			font-weight: normal;
-		}
-		h1 {
-			font-size: 350%;
-		}
-		h2 {
-			font-size: 170%;
-		}
-		h3 {
-			font-size: 135%;
-		}
-		
-		p {
-			margin: 0 0 10px 0;
-		}
-		a {
-			color: #222;
-		}
-		/* ________________________________________________________ */
-		.rtl {
-			direction: rtl;
-		}
-		.clear {
-			clear: both;
-		}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mudit weds Prashansa | Wedding Invitation</title>
+    <meta
+      name="description"
+      content="You are warmly invited to join the wedding celebrations of Mudit and Prashansa. 8 May 2026, Anant Mahal, Jaipur."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-		#main {
-			background: #fff;
-			width: 900px;
-			padding: 35px;
-			margin: 0 auto 10px auto;
-			overflow: hidden;
-			
-			box-shadow: 0 0 6px #ccc;
-		}
-		
-		#title {
-			margin: 0px 0 20px 0;
-			line-height: 40px;
-			text-align: center;
-			color: #111;
-		}
-		
-		#credit {
-			margin-bottom: 20px;
-			font-size: 11px;
-			color: #999;
-			text-align: center;
-		}
-			#credit a {
-				color: #999;
-			}
-		
-		p label {
-			float: left;
-			margin-right: 5px;
-			min-width: 30px;
-		}
-			p label span.colon {
-				float: right;
-			}
-		p span.value {
-			float: left;
-			width: 70%;
-			display: block;
-		}
-		
-		.section {
-			margin-bottom: 20px;
-			padding-bttom: 20px;
-		}
-		
-		.item {
-			margin: 0 0 20px 0;
-		}
+      :root {
+        --text-primary: #1a1a1a;
+        --text-medium: #666666;
+        --text-light: #999999;
+        --gold: #c9a84c;
+        --gold-light: #e8d48b;
+        --gold-pale: rgba(201, 168, 76, 0.15);
+        --bg-ivory: #f5f0e8;
+        --bg-white: #ffffff;
+        --bg-dark: #1a1a1a;
+        --font-serif: "Cormorant", Georgia, serif;
+        --font-sans: "Inter", system-ui, sans-serif;
+      }
 
-		.basic-info {
-			padding: 0px 0 0px 140px;
-			
-		}
-		.basic-info p {
-			float: left;
-			width: 48%;
-			margin: 0 0 0px 0;
-		}
-		.basic-info p.full {
-			width: 100%;
-			float: none;
-		}
-			.basic-info .r {
-				float: right;
-			}
+      html {
+        scroll-behavior: smooth;
+      }
 
-		/* education _____________________________ */
-		
-		.section .title {
-			border-bottom: 1px solid #ddd;
-			padding-bottom: 8px;
-		}
-		.section span.value {
-			display: block;
-		}
-		.section h3 span.l, .section span.r {
-			width: 49%;
-			float: left;
-		}
-			.section span.r {
-				float: right;
-				text-align: right;
-			}
-			.section-education .school,
-			.section-work .job_title {
-				font-size: 120%;
-				display: block;
-				margin: 5px 0 5px 0;
-			}
-	</style>
-</head>
-<body class="lang-en ">
+      body {
+        font-family: var(--font-sans);
+        background-color: var(--bg-ivory);
+        color: var(--text-primary);
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
 
-<div id="main">
-	
-	<h1 id="title">Mudit Gupta</h1>
-	<div class="basic-info section">
-					<p class="email"><label>E-mail<span class="colon">:</span></label> <span class="value">es14btech11012@iith.ac.in</span></p>
-		
-		
-					<p class="phone"><label>Phone<span class="colon">:</span></label> <span class="value">+91-9705731498, +91-6350277036</span></p>
+      .section-label {
+        font-family: var(--font-sans);
+        font-weight: 500;
+        font-size: 0.65rem;
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 0.8rem;
+      }
 
-				<div class="clear"> </div>
-	</div><!-- basic-info //-->
+      .section-title {
+        font-family: var(--font-serif);
+        font-weight: 500;
+        font-size: clamp(1.6rem, 4vw, 2.5rem);
+        color: var(--text-primary);
+        letter-spacing: 0.03em;
+      }
 
-	
-		
-			<div class="section section-education">
-			<h2 class="title"><b>Education</b></h2>
-			<div class="set">
-						<div class="item">
-							<h3><span class="course l">B.Tech.</span>
-						<span class="date r">2014 &mdash; 2018</span>
-							</h3>
-							<div class="clear"> </div>
-							<span class="school"><b>IIT Hyderabad</b></span><div class="info"><div>Engineering Science</div><div>Minor in Entrepreneurship</div></div><span class="clear"> </span>
-						</div>
-						</div>
-		</div>
-			<div class="section section-1456809247879">
-			<h2 class="title"><b>Summary</b></h2>
-			<div class="set">
-							<div class="item">
-								<span class="info">I am a passionate Developer, Techy Geek and an Explorer. Worked on projects related to React.js, node.js, Android, GoLang, data analysis, Machine Learning etc. Also worked as Manager for Elan &amp; Nvision IIT Hyderabad (cultural and technical fest of IIT Hyderabad) and E-Cell (Entrepreneurship Cell) IIT Hyderabad. I like to explore and try out various things and so in turn learn a lot of things.</span>
-							</div>
-						</div>
-		</div>
-			<div class="section section-work">
-			<h2 class="title"><b>Work experience (Tech)</b></h2>
-			<div class="set">
-								<div class="item">
-									<h3><span class="company l"> <b> Aerospike </b></span> </h3> <h4>
-							<span class="date r">May 2017 &mdash; June 2017</span>
-								</h4>
-								<div class="clear"> </div>
-								<span class="job_title"> <b>Software Engineering Intern</b> (Guide - Khosrow Afroozeh, Technical Lead And Sunil Sayyaparaju, Director - Product &amp; Technology)</span><div class="info"><ul><li><span>Developed AMC-Agent, a distributed monitoring service developed in <span style="font-weight:bold;">Go Language.</span>.</span></li><li><span>Developed core framework to stream any data from the individual nodes to a central server based on commands.</span></li><li><span>Implemented commands to stream log files or extracted content based on specific filters.</span></li><li><span>Implemented capability to query for content in a given time range across multiple split log files.</span></li></ul></div><div class="clear"> </div>
-								</div>
-							
-								<div class="item">
-									<h3><span class="company l"><b>Carrot ID</b></span> </h3> <h4>
-							<span class="date r">December 2015 &mdash; March 2016</span>
-								</h4>
-								<div class="clear"> </div>
-								<span class="job_title"><b>Developer</b> (Guide - Adi Vemuru, Founder CarrotID &amp; The August Fest)</span><div class="info"><ul><li><span><span>Made a website with Dynamic front-end using React and Redux.</span></span></li><li><span><span>Followed Agile Development Process</span></span></li></ul></div><div class="clear"> </div>
-								</div>
-								
-							</div>
-		</div>
-		
-			<div class="section section-references">
-			<h2 class="title"><b>Projects</b></h2>
-			<div class="set">
-							<div class="item">
-								<span class="info">
-									<div>
-										<ul> <li>
-											<span style="font-weight:bold;">Security Access Logging </span><span>(Objective - To make iotivity devices more secure) </span><span> - Building a logging system in Iotivity, rule based vulnerability analysis module and attack prevention module. </span>
-										</li></ul>
+      .gold-divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        margin: 1.5rem 0;
+      }
 
-										<ul> <li>
-											<span style="font-weight:bold;">Veedion </span><span> - Worked on an e-learning platform for lifelong learners. Learned about Market Research, Business Plan Development, Entrepreneurship. </span>
-										</li></ul>
+      .gold-divider .line {
+        width: 40px;
+        height: 1px;
+        background: var(--gold);
+      }
 
-										<ul> <li>
-											<span style="font-weight:bold;">Hunger Torrent </span><span> - Co-Founded Hunger torrent as food delivery service which was operational at IIT Hyderabad for 2 months. Learned about Idea validation, execution of idea and much more. </span>
-										</li></ul>
+      .gold-divider .diamond {
+        width: 6px;
+        height: 6px;
+        background: var(--gold);
+        transform: rotate(45deg);
+      }
 
-										<ul> <li>
-											<span style="font-weight:bold;">DYDE </span><span> - Made front end of Android app using XML and Java in Android Studio. Used various layouts and views. Also made a static website using bootstrap. </span>
-										</li></ul>
+      .gold-divider .lotus-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-										<ul><li><span><span style="font-weight:bold;">Meteor Starter Kit</span> (https://github.com/mudit1403/Zen) - Made a meteor - react - react router starter kit and for the demo of that starter kit I made login and registration page using that kit.</span></br> Key Concepts Demonstrated - React with Meteor, Basic routing with React Router, Routes requiring authentication, Working with reactive data.
-										</li></ul>
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition:
+          opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+          transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+      }
 
-										<ul><li><span style="font-weight:bold;">Tweet Analysis (Guide - Prof. Maunendra Sankar Desarkar) - </span><span>Worked on a Machine Learning Classification problem to classify news channel tweets into various categories. </span></li></ul>
-										<ul><li><b>Detecting Sub-Events associated with the main event (Guide - Prof. Srijith pk)</b><span><span> (https://github.com/mudit1403/Twitter-Sub-Event)</span></span><b>.</b></li></ul>
-							</div>
-						</div>
-		</div>
-		<div class="section section-interests row">
-			<div class = "col-md-8">
-				<h2 class="title"><b>Skills</b></h2>
-				<div class="set">
-					<div class="item">
-						<span class="info"><ul><li><span><span><b>Languages</b> - Golang, C, C++, </span></span>Python, Java, Javascript, Fortran</li><li><span><span><b>WebBased Languages</b> - HTML, CSS, JS</span></span></li><li>PostgreSQL, MongoDb</li><li><span><span><b>Frameworks and Libraries</b> - React.js, </span></span><span>Reflux, </span>Redux, Meteor, Node.js, Express</li><li><span>Machine Learning, Data Analysis</span></li>
-					</div>
-				</div>
-			</div>
-		
-			<div class = "col-md-4">
-				<h2 class="title"><b>Interests</b></h2>
-				<div class="set">
-					<div class="item">
-						<span class="info"><span><span>My interests include </span></span><div><ul><li>Learning new things and gaining new experiences.</li><li><span><span>Entrepreneurship.</span></span></li><li><span><span>Developing new things.</span></span></li><li><span><span>Product Management</span></span></li></ul></div></span>
-					</div>
-				</div>
-			</div>
-		</div>
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
 
-		<div class="section section-interests row">
-			<div class = "col-md-6">
-				<h2 class="title"><b>Relevant Academic Courses Done</b></h2>
-				<div class="set">
-					<div class="item">
-						<span class="info">
-						<ul>
-							<li><span>Computer Networks</span></li>
-							<li><span>Database Management Systems</span></li>
-							<li><span>Applied Machine Learning</span></li>
-							<li><span>Operating Systems</span></li>
-							<li><span>Algorithms</span></li>
-							<li><span>Automata Theory and Theory of Computation</span></li>
-							<li><span>Data Structures</span></li>
-							<li><span>Internet of Things</span></li>
-							<li><span>Software Engineering</span></li>
-						</ul></span>
-					</div>
-				</div>
-			</div>
+      /* ── Hero ── */
 
-			<div class = "col-md-6">
-				<h2 class="title"><b>Relevant Online Courses Done</b></h2>
-				<div class="set">
-					<div class="item">
-						<span class="info">
-						<ul>
-							<li><span>Programming Languages - Udacity</span></li>
-							<li><span>Intro to Machine Learning, Intro to Data Analysis - Udacity</span></li>
-							<li><span>Android Development for Beginners, Developing Android Apps  - Udacity</span></li>
-							<li><span>Intro to Descriptive Statistics, Intro to Inferential Statistics - Udacity</span></li>
-							<li><span>Machine Learning (Stanford University) - Coursera</span></li>
-							<li><span>Server-side Development with NodeJs (The Hong Kong University of Science and Technology) - Coursera</span></li>
-							<li><span>Introduction to Software Product Management (University of Alberta) - Coursera</span></li>
-						</ul></span>
-					</div>
-				</div>
-			</div>
-		</div>
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+        position: relative;
+        background-color: var(--bg-ivory);
+        z-index: 1;
+        overflow: hidden;
+      }
 
-		<div class="section section-work">
-			<h2 class="title"><b>Work experience (Non-Tech)</b></h2>
-			<div class="set">
-								
-								<div class="item">
-									<h3><span class="company l"><b>E-Cell IIT Hyderabad</b></span> </h3> <h4>
-							<span class="date r">April 2016 &mdash; April 2017</span>
-								</h4>
-								<div class="clear"> </div>
-								<span class="job_title"><b>Manager</b></span><div class="info"><ul><li><b>Co-Founded and Organised Megathon</b><span> which is India's largest and first ever student run </span><b>Hackathon</b><span> in association with E-Cell, IIIT Hyderabad with more than 500 participants.</span></li><li>Leading the startup culture at IIT Hyderabad. I conducted various events, workshops, interactive games and speaker sessions for inspiring and assisting young entrepreneurs in their journey in the world of business.</li></ul></div><div class="clear"> </div>
-								</div>
-							
-								<div class="item">
-									<h3><span class="company l"><b>Elan &amp; Nvision 2017 IIT Hyderabad </b></span> </h3> <h4>
-							<span class="date r">April 2016 &mdash; April 2017</span>
-								</h4>
-								<div class="clear"> </div>
-								<span class="job_title"><b>Manager</b></span><div class="info"><ul><li>Conducted the best fest IIT-H has ever seen with triple the budget and famous personalities performing on stage.</li><li><span>Leaded a team of 25 Coordinators and around 100 volunteers.</span></li><li><span>Took care of Sponsorship and Workshops Deals,</span> Finances, Hospitality and Infrastructure.</li><li><span>Took care of Fest Management and ensured smooth running of the Fest.</span></li></ul></div><div class="clear"> </div>
-								</div>
-							
-							
-								<div class="item">
-									<h3><span class="company l"><b>Nvision 2016</b></span> </h3> <h4>
-							<span class="date r">June 2015 &mdash; April 2016</span>
-								</h4>
-								<div class="clear"> </div>
-								<span class="job_title"><b>Marketing Co-ordinator</b></span><div class="info"><div><ul><li><span><span>Talked and convinced various companies to sponsor our fest.</span></span></li><li><span><span>Leaded a team of 10 volunteers and trained them.</span></span></li><li><span><span>Took care of the requirements of our sponsors for various publicity like online publicity and ground publicity.</span></span></li><li><span><span>Coordinated with other coordinators and managers for managing the event according to the requirements of our sponsors.  </span></span></li></ul></div></div><div class="clear"> </div>
-								</div>
-							
-								
-							</div>
-		</div>
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image:
+          radial-gradient(
+            circle at center,
+            rgba(245, 240, 232, 0.7) 0%,
+            rgba(245, 240, 232, 0) 65%
+          ),
+          radial-gradient(
+            circle at 15% 50%,
+            rgba(201, 168, 76, 0.1),
+            transparent 40%
+          ),
+          radial-gradient(
+            circle at 85% 50%,
+            rgba(201, 168, 76, 0.1),
+            transparent 40%
+          );
+        z-index: -1;
+        pointer-events: none;
+      }
 
-		<div class="section">
-			<h2 class="title"><b>Volunteering</b></h2>
-			<div class="set">
-				<div class="item">
-					<span class="info"><div><b>The August Fest - </b>Worked as social media volunteer.</div><div><b>NSS - </b>worked as a volunteer for teaching activities, cloth donation etc. for social cause.</div></span>
-				</div>
-			</div>
-		</div>
-		
-</div>
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+        background: url("https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=1600&q=80")
+          center/cover no-repeat;
+        opacity: 0.3;
+        z-index: -2;
+        animation: kenBurns 28s ease-in-out infinite alternate;
+        pointer-events: none;
+      }
 
-</body>
+      @keyframes kenBurns {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(1.06);
+        }
+      }
+
+      .hero-mandala {
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.1;
+        animation: rotateMandala 60s linear infinite;
+        z-index: 0;
+        pointer-events: none;
+      }
+      @keyframes rotateMandala {
+        from {
+          transform: translate(-50%, -50%) rotate(0deg);
+        }
+        to {
+          transform: translate(-50%, -50%) rotate(360deg);
+        }
+      }
+
+      .hero .blessing {
+        font-family: var(--font-sans);
+        font-size: 0.65rem;
+        letter-spacing: 0.4em;
+        color: var(--gold);
+        margin-bottom: 1.5rem;
+        opacity: 1;
+      }
+
+      .hero .couple-name {
+        font-family: var(--font-serif);
+        font-weight: 500;
+        font-size: clamp(3rem, 9vw, 6rem);
+        line-height: 1.1;
+        color: var(--text-primary);
+        opacity: 1;
+      }
+
+      .hero .couple-name.first {
+      }
+
+      .hero .couple-name.second {
+      }
+
+      .hero .ampersand {
+        font-family: var(--font-serif);
+        font-style: italic;
+        font-size: clamp(1.5rem, 4vw, 2.5rem);
+        color: var(--gold);
+        margin: 0.3rem 0;
+        opacity: 1;
+      }
+
+      .hero .hero-divider {
+        opacity: 1;
+      }
+
+      .hero .hero-date {
+        font-family: var(--font-sans);
+        font-weight: 400;
+        font-size: clamp(0.75rem, 1.8vw, 0.9rem);
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+        color: var(--text-medium);
+        opacity: 1;
+      }
+
+      .hero .hero-venue {
+        font-family: var(--font-serif);
+        font-style: italic;
+        font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+        color: var(--text-light);
+        margin-top: 0.5rem;
+        opacity: 1;
+      }
+
+      .scroll-hint {
+        position: absolute;
+        bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+        opacity: 0;
+        animation: fadeUp 0.8s ease forwards 2s;
+      }
+
+      .scroll-hint span {
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-right: 1.5px solid var(--gold);
+        border-bottom: 1.5px solid var(--gold);
+        transform: rotate(45deg);
+        animation: scrollBounce 2s ease-in-out infinite;
+      }
+
+      .scroll-hint span:nth-child(2) {
+        animation-delay: 0.15s;
+        opacity: 0.6;
+      }
+      .scroll-hint span:nth-child(3) {
+        animation-delay: 0.3s;
+        opacity: 0.3;
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes scrollBounce {
+        0%,
+        100% {
+          transform: rotate(45deg) translateY(0);
+          opacity: 0;
+        }
+        50% {
+          transform: rotate(45deg) translateY(4px);
+          opacity: 1;
+        }
+      }
+
+      /* ── Family ── */
+
+      .family {
+        padding: 6rem 2rem;
+        text-align: center;
+        background-color: var(--bg-white);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .family-motif {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        opacity: 0.06;
+        top: 20%;
+        animation: floatMotif 7s ease-in-out infinite alternate;
+        pointer-events: none;
+      }
+
+      .motif-left {
+        left: -50px;
+      }
+      .motif-right {
+        right: -50px;
+      }
+
+      @keyframes floatMotif {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(-8px);
+        }
+      }
+
+      .family-inner {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .family .invitation-text {
+        font-family: var(--font-serif);
+        font-style: italic;
+        font-size: clamp(1rem, 2vw, 1.2rem);
+        color: var(--text-medium);
+        line-height: 1.8;
+        margin-bottom: 0.5rem;
+      }
+
+      .family .elder-names {
+        font-family: var(--font-serif);
+        font-weight: 500;
+        font-size: clamp(1.1rem, 2.2vw, 1.3rem);
+        color: var(--text-primary);
+        line-height: 1.8;
+        margin-bottom: 1.5rem;
+      }
+
+      .family .couple-highlight {
+        font-family: var(--font-serif);
+        font-weight: 600;
+        font-size: clamp(1.4rem, 3vw, 1.8rem);
+        color: var(--text-primary);
+        margin: 1.5rem 0;
+      }
+
+      .family .couple-highlight .amp {
+        color: var(--gold);
+        font-style: italic;
+      }
+
+      .family .bride-parents {
+        font-family: var(--font-sans);
+        font-size: 0.85rem;
+        color: var(--text-medium);
+        line-height: 1.8;
+        margin-bottom: 3rem;
+      }
+
+      .family-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
+        text-align: center;
+        margin-top: 3rem;
+      }
+
+      .family-grid .side-label {
+        font-family: var(--font-sans);
+        font-weight: 500;
+        font-size: 0.6rem;
+        letter-spacing: 0.35em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 1rem;
+      }
+
+      .family-grid .member {
+        font-family: var(--font-sans);
+        font-weight: 300;
+        font-size: 0.85rem;
+        color: var(--text-medium);
+        line-height: 2.2;
+      }
+
+      /* ── Events ── */
+
+      .events {
+        padding: 6rem 2rem;
+        text-align: center;
+        background-color: var(--bg-white);
+        background-image: radial-gradient(
+          var(--gold-pale) 1.5px,
+          transparent 1.5px
+        );
+        background-size: 30px 30px;
+      }
+
+      .timeline {
+        position: relative;
+        max-width: 700px;
+        margin: 3rem auto 0;
+        padding: 1rem 0;
+      }
+
+      .timeline::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1px;
+        height: 100%;
+        background: linear-gradient(
+          to bottom,
+          transparent,
+          var(--gold-light) 10%,
+          var(--gold-light) 90%,
+          transparent
+        );
+      }
+
+      .timeline-event {
+        position: relative;
+        padding: 2rem 0;
+      }
+
+      @keyframes pulseNode {
+        0%,
+        100% {
+          transform: translateX(-50%) rotate(45deg) scale(1);
+          opacity: 0.6;
+        }
+        50% {
+          transform: translateX(-50%) rotate(45deg) scale(1.3);
+          opacity: 1;
+        }
+      }
+
+      .timeline-event .node {
+        position: absolute;
+        left: 50%;
+        top: 2rem;
+        transform: translateX(-50%) rotate(45deg);
+        width: 10px;
+        height: 10px;
+        background: var(--gold);
+        z-index: 2;
+        animation: pulseNode 3s infinite;
+      }
+
+      .timeline-card {
+        background: var(--bg-white);
+        border: 1px solid rgba(201, 168, 76, 0.15);
+        border-radius: 12px;
+        padding: 2.5rem 1.5rem 2rem 1.5rem;
+        max-width: 320px;
+        text-align: center;
+        transition:
+          transform 0.4s ease,
+          box-shadow 0.4s ease;
+        position: relative;
+      }
+
+      .couple-illustration {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.8rem;
+      }
+
+      .couple-illustration svg {
+        width: 100px;
+        height: auto;
+      }
+
+      .color-palette {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        margin-top: 0.6rem;
+      }
+
+      .color-palette .swatch {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+      }
+
+      .timeline-card::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 12px;
+        pointer-events: none;
+        z-index: 10;
+        background-image:
+          url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"><path d="M0 0h30v1H1v29H0z" fill="%23c9a84c" opacity="0.6"/></svg>'),
+          url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"><path d="M30 0H0v1h29v29h1z" fill="%23c9a84c" opacity="0.6"/></svg>'),
+          url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"><path d="M0 30h30v-1H1V0H0z" fill="%23c9a84c" opacity="0.6"/></svg>'),
+          url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"><path d="M30 30H0v-1h29V0h1z" fill="%23c9a84c" opacity="0.6"/></svg>');
+        background-position:
+          top 8px left 8px,
+          top 8px right 8px,
+          bottom 8px left 8px,
+          bottom 8px right 8px;
+        background-repeat: no-repeat;
+      }
+
+
+
+      .timeline-card:hover {
+        transform: translateY(-3px);
+        box-shadow:
+          0 8px 24px rgba(201, 168, 76, 0.15),
+          0 0 15px rgba(201, 168, 76, 0.2);
+      }
+
+      .timeline-event:nth-child(odd) .timeline-card {
+        margin-right: auto;
+        margin-left: 0;
+      }
+
+      .timeline-event:nth-child(even) .timeline-card {
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .timeline-event:nth-child(1) .reveal {
+        transition-delay: 0s;
+      }
+      .timeline-event:nth-child(2) .reveal {
+        transition-delay: 0.15s;
+      }
+      .timeline-event:nth-child(3) .reveal {
+        transition-delay: 0.3s;
+      }
+      .timeline-event:nth-child(4) .reveal {
+        transition-delay: 0.45s;
+      }
+
+      .timeline-card .event-name {
+        font-family: var(--font-serif);
+        font-weight: 600;
+        font-size: 1.15rem;
+        letter-spacing: 0.08em;
+        color: var(--text-primary);
+        margin-bottom: 0.8rem;
+      }
+
+      .timeline-card .event-name::before {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 1px;
+        background: var(--gold);
+        margin: 0 auto 0.8rem auto;
+      }
+
+      .timeline-card .event-date {
+        font-family: var(--font-sans);
+        font-weight: 500;
+        font-size: 0.6rem;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 0.6rem;
+      }
+
+      .timeline-card .event-detail {
+        font-family: var(--font-sans);
+        font-weight: 300;
+        font-size: 0.8rem;
+        color: var(--text-light);
+        line-height: 1.8;
+      }
+
+      .timeline-card .dress-code-wrap {
+        margin-top: 1rem;
+        text-align: center;
+      }
+
+      .timeline-card .dress-code-label {
+        display: block;
+        font-family: var(--font-sans);
+        font-size: 0.5rem;
+        font-weight: 600;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--text-light);
+        margin-bottom: 0.3rem;
+      }
+
+      .timeline-card .dress-code {
+        display: inline-block;
+        padding: 0.3rem 0.8rem;
+        font-family: var(--font-sans);
+        font-size: 0.6rem;
+        font-weight: 500;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--gold);
+        background: var(--gold-pale);
+        border-radius: 20px;
+      }
+
+      /* ── Countdown ── */
+
+      .countdown-section {
+        padding: 6rem 2rem;
+        text-align: center;
+        background-color: var(--bg-ivory);
+        background-image: radial-gradient(
+          var(--gold-pale) 1px,
+          transparent 1px
+        );
+        background-size: 20px 20px;
+      }
+
+      .countdown {
+        display: flex;
+        justify-content: center;
+        gap: clamp(1rem, 3vw, 2rem);
+        flex-wrap: wrap;
+        margin-top: 2.5rem;
+      }
+
+      .countdown-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 90px;
+        padding: 1.5rem 1.2rem;
+        background: var(--bg-white);
+        border: 1px solid rgba(201, 168, 76, 0.15);
+        border-radius: 12px;
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease,
+          opacity 0.6s ease;
+      }
+
+      .reveal.visible .countdown-item:nth-child(1) {
+        animation: fadeUp 0.6s ease forwards 0s;
+        opacity: 0;
+      }
+      .reveal.visible .countdown-item:nth-child(2) {
+        animation: fadeUp 0.6s ease forwards 0.1s;
+        opacity: 0;
+      }
+      .reveal.visible .countdown-item:nth-child(3) {
+        animation: fadeUp 0.6s ease forwards 0.2s;
+        opacity: 0;
+      }
+      .reveal.visible .countdown-item:nth-child(4) {
+        animation: fadeUp 0.6s ease forwards 0.3s;
+        opacity: 0;
+      }
+
+      .countdown-item:hover {
+        transform: translateY(-4px);
+        box-shadow:
+          0 0 0 2px var(--gold-pale),
+          0 8px 20px rgba(201, 168, 76, 0.15);
+      }
+
+      .countdown-item .number {
+        font-family: var(--font-serif);
+        font-weight: 600;
+        font-size: clamp(2rem, 5vw, 3rem);
+        color: var(--gold);
+        line-height: 1;
+      }
+
+      .countdown-item .label {
+        font-family: var(--font-sans);
+        font-weight: 500;
+        font-size: 0.55rem;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--text-light);
+        margin-top: 0.6rem;
+      }
+
+      /* ── Venue ── */
+
+      .venue {
+        padding: 6rem 2rem;
+        text-align: center;
+        background-color: var(--bg-ivory);
+      }
+
+      .venue .venue-name {
+        font-family: var(--font-serif);
+        font-weight: 500;
+        font-size: clamp(1.4rem, 3vw, 2rem);
+        color: var(--text-primary);
+        margin-bottom: 0.3rem;
+      }
+
+      .venue .venue-address {
+        font-family: var(--font-sans);
+        font-weight: 300;
+        font-size: 0.85rem;
+        color: var(--text-light);
+        margin-bottom: 2rem;
+      }
+
+      .venue .map-container {
+        max-width: 700px;
+        margin: 0 auto;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid rgba(201, 168, 76, 0.2);
+        outline: 1px solid rgba(201, 168, 76, 0.4);
+        outline-offset: 4px;
+      }
+
+      .venue .map-container iframe {
+        width: 100%;
+        height: 400px;
+        border: 0;
+        display: block;
+      }
+
+      .venue .directions-link {
+        display: inline-block;
+        margin-top: 1.5rem;
+        font-family: var(--font-sans);
+        font-weight: 500;
+        font-size: 0.7rem;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        color: var(--gold);
+        text-decoration: none;
+        padding: 0.8rem 2rem;
+        border: 1px solid var(--gold);
+        border-radius: 30px;
+        transition:
+          background 0.3s ease,
+          color 0.3s ease;
+      }
+
+      .venue .directions-link:hover {
+        background: var(--gold);
+        color: var(--bg-white);
+      }
+
+      /* ── Footer ── */
+
+      .footer {
+        background-color: var(--bg-dark);
+        text-align: center;
+        padding: 3rem 2rem;
+      }
+
+      .footer .monogram {
+        font-family: var(--font-serif);
+        font-style: italic;
+        font-size: 2.5rem;
+        color: var(--gold);
+        margin-bottom: 0.8rem;
+      }
+
+      .footer .footer-date {
+        font-family: var(--font-sans);
+        font-size: 0.6rem;
+        font-weight: 400;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--text-light);
+      }
+
+      .footer .footer-dots {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        margin-top: 1.2rem;
+      }
+
+      .footer .footer-dots span {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: var(--gold);
+        opacity: 0.4;
+      }
+
+      .footer .footer-dots span:nth-child(even) {
+        background: var(--text-light);
+      }
+
+      /* ── Responsive ── */
+
+      @media (max-width: 600px) {
+        .family {
+          padding: 4rem 1.5rem;
+        }
+
+        .family-grid {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+
+        .timeline::before {
+          left: 16px;
+        }
+
+        .timeline-event .node {
+          left: 16px;
+        }
+
+        .timeline-event:nth-child(odd) .timeline-card,
+        .timeline-event:nth-child(even) .timeline-card {
+          margin-left: 44px;
+          margin-right: 0;
+          max-width: none;
+        }
+
+        .venue .map-container iframe {
+          height: 280px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero" id="hero">
+      <div class="hero-bg" id="hero-bg"></div>
+      <svg
+        class="hero-mandala"
+        viewBox="0 0 100 100"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>Decorative mandala</title>
+        <circle
+          cx="50"
+          cy="50"
+          r="48"
+          fill="none"
+          stroke="var(--gold)"
+          stroke-width="0.5"
+          stroke-dasharray="2 4"
+        />
+        <circle
+          cx="50"
+          cy="50"
+          r="42"
+          fill="none"
+          stroke="var(--gold)"
+          stroke-width="0.2"
+        />
+        <path
+          d="M50 8 v84 M8 50 h84 M20 20 l60 60 M20 80 l60 -60"
+          stroke="var(--gold)"
+          stroke-width="0.2"
+          fill="none"
+        />
+      </svg>
+      <p class="blessing">ॐ श्री गणेशाय नम:</p>
+      <h1 class="couple-name first">Mudit</h1>
+      <p class="ampersand">&</p>
+      <h1 class="couple-name second">Prashansa</h1>
+      <div class="gold-divider hero-divider">
+        <span class="line"></span>
+        <span class="lotus-icon">
+          <svg
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Lotus icon</title>
+            <path
+              d="M12 2 C12 2, 8 10, 2 12 C8 14, 12 22, 12 22 C12 22, 16 14, 22 12 C16 10, 12 2, 12 2 Z"
+              fill="var(--gold)"
+            />
+          </svg>
+        </span>
+        <span class="line"></span>
+      </div>
+      <p class="hero-date">8 May 2026</p>
+      <p class="hero-venue">Anant Mahal, Jaipur</p>
+      <div class="scroll-hint">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </section>
+
+    <section class="events" id="events">
+      <div class="reveal">
+        <p class="section-label">Join Us For</p>
+        <h2 class="section-title">The Celebrations</h2>
+        <div class="gold-divider">
+          <span class="line"></span>
+          <span class="lotus-icon">
+            <svg
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Lotus icon</title>
+              <path
+                d="M12 2 C12 2, 8 10, 2 12 C8 14, 12 22, 12 22 C12 22, 16 14, 22 12 C16 10, 12 2, 12 2 Z"
+                fill="var(--gold)"
+              />
+            </svg>
+          </span>
+          <span class="line"></span>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-event reveal">
+          <div class="node"></div>
+          <div class="timeline-card">
+            <div class="couple-illustration">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <title>Mehendi couple illustration</title>
+                <g fill="#A8C5B0">
+                  <circle cx="35" cy="20" r="8" fill="#4A6E50" />
+                  <path d="M25 35 C25 25, 45 25, 45 35 L45 70 L25 70 Z" />
+                  <path d="M30 70 L30 95 L34 95 L34 70 Z" fill="#C5D8C0" />
+                  <path d="M36 70 L36 95 L40 95 L40 70 Z" fill="#C5D8C0" />
+                  <circle cx="65" cy="22" r="7" fill="#4A6E50" />
+                  <path
+                    d="M50 35 C50 25, 80 25, 80 35 L75 95 L55 95 Z"
+                    fill="#7B9E87"
+                  />
+                  <path
+                    d="M55 35 Q 75 40 85 70 L 75 95 Q 60 70 50 35 Z"
+                    fill="#A8C5B0"
+                    opacity="0.8"
+                  />
+                </g>
+              </svg>
+            </div>
+
+            <h3 class="event-name">Mehendi</h3>
+            <p class="event-date">7th May 2026</p>
+            <p class="event-detail">
+              10 AM onwards<br />
+              Lunch: 2 PM onwards
+            </p>
+            <div class="dress-code-wrap">
+              <span class="dress-code-label">Dress Code</span>
+              <span class="dress-code">Light Green Bliss</span>
+            </div>
+            <div class="color-palette">
+              <div class="swatch" style="background-color: #7b9e87"></div>
+              <div class="swatch" style="background-color: #a8c5b0"></div>
+              <div class="swatch" style="background-color: #4a6e50"></div>
+              <div class="swatch" style="background-color: #c5d8c0"></div>
+              <div class="swatch" style="background-color: #8fb89a"></div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-event reveal">
+          <div class="node"></div>
+          <div class="timeline-card">
+            <div class="couple-illustration">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <title>Sangeet couple illustration</title>
+                <g>
+                  <circle cx="30" cy="25" r="8" fill="#3D3D3D" />
+                  <path
+                    d="M20 40 C20 30, 40 30, 40 40 L40 70 L20 70 Z"
+                    fill="#1B2A4A"
+                  />
+                  <path
+                    d="M30 30 L30 60"
+                    stroke="#C9A84C"
+                    stroke-width="1"
+                    stroke-dasharray="2 2"
+                  />
+                  <path d="M25 70 L25 95 L29 95 L29 70 Z" fill="#6B5B4A" />
+                  <path d="M31 70 L31 95 L35 95 L35 70 Z" fill="#6B5B4A" />
+                  <circle cx="65" cy="20" r="7" fill="#3D3D3D" />
+                  <path d="M55 45 L45 95 L85 95 L75 45 Z" fill="#D4A0C0" />
+                  <path
+                    d="M55 35 C55 25, 75 25, 75 35 L75 42 L55 42 Z"
+                    fill="#800020"
+                  />
+                  <circle cx="55" cy="65" r="1.5" fill="#D4AF37" />
+                  <circle cx="75" cy="75" r="1" fill="#D4AF37" />
+                  <circle cx="65" cy="85" r="2" fill="#D4AF37" />
+                  <circle cx="50" cy="80" r="1" fill="#D4AF37" />
+                  <path
+                    d="M85 15 L85 30 M85 15 L95 20 L95 35"
+                    stroke="#C9A84C"
+                    stroke-width="1.5"
+                    fill="none"
+                  />
+                  <circle cx="83" cy="30" r="3" fill="#C9A84C" />
+                  <circle cx="93" cy="35" r="3" fill="#C9A84C" />
+                </g>
+              </svg>
+            </div>
+
+            <h3 class="event-name">Sangeet</h3>
+            <p class="event-date">7th May 2026</p>
+            <p class="event-detail">
+              7 PM onwards<br />
+              Dinner: 8 PM onwards
+            </p>
+            <div class="dress-code-wrap">
+              <span class="dress-code-label">Dress Code</span>
+              <span class="dress-code">Glitter and Glam</span>
+            </div>
+            <div class="color-palette">
+              <div class="swatch" style="background-color: #c9a84c"></div>
+              <div class="swatch" style="background-color: #8b6914"></div>
+              <div class="swatch" style="background-color: #4a3728"></div>
+              <div class="swatch" style="background-color: #6b5b4a"></div>
+              <div class="swatch" style="background-color: #d4af37"></div>
+              <div class="swatch" style="background-color: #3d3d3d"></div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-event reveal">
+          <div class="node"></div>
+          <div class="timeline-card">
+            <div class="couple-illustration">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <title>Haldi couple illustration</title>
+                <g>
+                  <circle cx="35" cy="25" r="8" fill="#3D3D3D" />
+                  <path
+                    d="M25 40 C25 30, 45 30, 45 40 L45 65 L25 65 Z"
+                    fill="#E8C840"
+                  />
+                  <path d="M30 65 L30 90 L34 90 L34 65 Z" fill="#f5f0e8" />
+                  <path d="M36 65 L36 90 L40 90 L40 65 Z" fill="#f5f0e8" />
+                  <circle cx="65" cy="28" r="7" fill="#3D3D3D" />
+                  <path
+                    d="M55 40 C55 30, 75 30, 75 40 L85 90 L45 90 Z"
+                    fill="#E8C840"
+                  />
+                  <path
+                    d="M55 40 L65 50 L75 40"
+                    stroke="#E88070"
+                    stroke-width="2"
+                    fill="none"
+                  />
+                </g>
+              </svg>
+            </div>
+
+            <h3 class="event-name">Haldi</h3>
+            <p class="event-date">8th May 2026</p>
+            <p class="event-detail">
+              10 AM onwards<br />
+              Lunch: 2 PM onwards
+            </p>
+            <div class="dress-code-wrap">
+              <span class="dress-code-label">Dress Code</span>
+              <span class="dress-code">Pastel Pops</span>
+            </div>
+            <div class="color-palette">
+              <div class="swatch" style="background-color: #e8c840"></div>
+              <div class="swatch" style="background-color: #a8c5b0"></div>
+              <div class="swatch" style="background-color: #d4a0c0"></div>
+              <div class="swatch" style="background-color: #b8a0d4"></div>
+              <div class="swatch" style="background-color: #a0c0d4"></div>
+              <div class="swatch" style="background-color: #e88070"></div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-event reveal">
+          <div class="node"></div>
+          <div class="timeline-card">
+            <div class="couple-illustration">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <title>Shaadi couple illustration</title>
+                <g>
+                  <circle cx="35" cy="22" r="8" fill="#1a1a1a" />
+                  <path
+                    d="M28 15 C28 5, 42 5, 42 15 L40 22 L30 22 Z"
+                    fill="#C9A84C"
+                  />
+                  <path
+                    d="M25 35 C25 25, 45 25, 45 35 L45 75 L25 75 Z"
+                    fill="#800020"
+                  />
+                  <path d="M35 35 L35 75" stroke="#C9A84C" stroke-width="2" />
+                  <path d="M30 75 L30 95 L34 95 L34 75 Z" fill="#f5f0e8" />
+                  <path d="M36 75 L36 95 L40 95 L40 75 Z" fill="#f5f0e8" />
+                  <circle cx="65" cy="25" r="7" fill="#1a1a1a" />
+                  <path
+                    d="M50 35 C50 25, 80 25, 80 35 L75 95 L55 95 Z"
+                    fill="#2E5E3E"
+                  />
+                  <path
+                    d="M50 35 Q 75 40 85 70 L 75 95"
+                    stroke="#C9A84C"
+                    stroke-width="3"
+                    fill="none"
+                  />
+                  <circle cx="65" cy="25" r="1.5" fill="#C9A84C" />
+                  <path
+                    d="M60 45 L70 45 L65 60 Z"
+                    fill="#C9A84C"
+                    opacity="0.6"
+                  />
+                </g>
+              </svg>
+            </div>
+
+            <h3 class="event-name">Shaadi</h3>
+            <p class="event-date">8th May 2026</p>
+            <p class="event-detail">
+              8 PM onwards<br />
+              Barat Prasthan: 6 PM<br />
+              Dinner: 8 PM onwards<br />
+              Barat Swagat: 9 PM<br />
+              Varmala: 9 PM<br />
+              Phera: Midnight
+            </p>
+            <div class="dress-code-wrap">
+              <span class="dress-code-label">Dress Code</span>
+              <span class="dress-code">Ethnic Elegance</span>
+            </div>
+            <div class="color-palette">
+              <div class="swatch" style="background-color: #800020"></div>
+              <div class="swatch" style="background-color: #1b2a4a"></div>
+              <div class="swatch" style="background-color: #c9a84c"></div>
+              <div class="swatch" style="background-color: #2e5e3e"></div>
+              <div class="swatch" style="background-color: #4a7a5a"></div>
+              <div class="swatch" style="background-color: #3a5a3a"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="venue" id="venue">
+      <div class="reveal">
+        <p class="section-label">The Venue</p>
+        <p class="venue-name">Anant Mahal</p>
+        <p class="venue-address">Patrakar Colony, Jaipur</p>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.0794724964626!2d75.73107787635644!3d26.837424476692206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db53beb4ab939%3A0x7dc21e9162faf521!2sAnant%20Mahal!5e0!3m2!1sen!2sin!4v1776700298089!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Anant Mahal, Patrakar Colony, Jaipur"
+          >
+          </iframe>
+        </div>
+        <a
+          class="directions-link"
+          href="https://www.google.com/maps/search/Anant+Mahal+Patrakar+Colony+Jaipur"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Get Directions
+        </a>
+      </div>
+    </section>
+
+    <section class="family" id="family">
+      <svg
+        class="family-motif motif-left"
+        viewBox="0 0 50 50"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>Decorative motif left</title>
+        <path
+          d="M25 0 C25 20, 0 25, 0 25 C0 25, 25 30, 25 50 C25 30, 50 25, 50 25 C50 25, 25 20, 25 0 Z"
+          fill="none"
+          stroke="var(--gold)"
+          stroke-width="1"
+        />
+      </svg>
+      <svg
+        class="family-motif motif-right"
+        viewBox="0 0 50 50"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>Decorative motif right</title>
+        <path
+          d="M25 0 C25 20, 0 25, 0 25 C0 25, 25 30, 25 50 C25 30, 50 25, 50 25 C50 25, 25 20, 25 0 Z"
+          fill="none"
+          stroke="var(--gold)"
+          stroke-width="1"
+        />
+      </svg>
+      <div class="family-inner">
+        <div class="reveal">
+          <p class="invitation-text">With the blessings of God</p>
+          <p class="elder-names">
+            Seema &amp; Radha Krishna Gupta
+          </p>
+          <p class="invitation-text">
+            Invite you to join in the wedding celebrations of their Son
+          </p>
+          <div class="gold-divider">
+            <span class="line"></span>
+            <span class="diamond"></span>
+            <span class="line"></span>
+          </div>
+          <p class="couple-highlight">
+            Mudit
+          </p>
+          <p class="bride-parents">
+            Grand Son of Late Smt. Angoori Devi &amp; Late Shri Babulal Ji Goyal<br />
+          </p>
+          <p class="couple-highlight">
+            <span class="amp">&amp;</span>
+          </p>
+          <p class="couple-highlight">
+            Prashansa
+          </p>
+          <p class="bride-parents">
+            Grand Daughter of Late Smt. Shanti Devi &amp; Late Shri Ganga Prasad Ji Agarwal<br />
+            Daughter of Mrs. Himani &amp; Mr. Ved Prakash Agarwal<br />
+          </p>
+        </div>
+        <div class="reveal">
+          <div class="gold-divider">
+            <span class="line"></span>
+            <span class="diamond"></span>
+            <span class="line"></span>
+          </div>
+          <div class="family-grid">
+            <div>
+              <p class="side-label">With Best Compliments From</p>
+              <p class="member">Twinkle &amp; Shubham Garg</p>
+            </div>
+            <div>
+              <p class="side-label">Maternal Side</p>
+              <p class="member">Twinkle &amp; Shubham Garg</p>
+              <p class="member">Kamlesh &amp; B.S Bansal Ji</p>
+              <p class="member">Vinita &amp; Sanjay Ji</p>
+              <p class="member">Monika &amp; Sachin Ji</p>
+              <p class="member">Gungun, Yeshu, Manu &amp; All Bansal Family</p>
+            </div>
+            <div>
+              <p class="side-label">Paternal Side</p>
+              <p class="member">Hariom Goyal</p>
+              <p class="member">Deepak, Alpesh, Harshit</p>
+              <p class="member">Laksh &amp; All Goyal Family</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="countdown-section" id="countdown">
+      <div class="reveal">
+        <p class="section-label">Mark Your Calendar</p>
+        <h2 class="section-title">Counting the Days</h2>
+        <div class="gold-divider">
+          <span class="line"></span>
+          <span class="lotus-icon">
+            <svg
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Lotus icon</title>
+              <path
+                d="M12 2 C12 2, 8 10, 2 12 C8 14, 12 22, 12 22 C12 22, 16 14, 22 12 C16 10, 12 2, 12 2 Z"
+                fill="var(--gold)"
+              />
+            </svg>
+          </span>
+          <span class="line"></span>
+        </div>
+        <div class="countdown">
+          <div class="countdown-item">
+            <span class="number" id="cd-days">00</span>
+            <span class="label">Days</span>
+          </div>
+          <div class="countdown-item">
+            <span class="number" id="cd-hours">00</span>
+            <span class="label">Hours</span>
+          </div>
+          <div class="countdown-item">
+            <span class="number" id="cd-minutes">00</span>
+            <span class="label">Minutes</span>
+          </div>
+          <div class="countdown-item">
+            <span class="number" id="cd-seconds">00</span>
+            <span class="label">Seconds</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <p class="monogram">M &amp; P</p>
+      <p class="footer-date">8 May 2026</p>
+      <div class="footer-dots">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </footer>
+
+    <script>
+      var observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+
+      document.querySelectorAll(".reveal").forEach(function (el) {
+        observer.observe(el);
+      });
+
+      (function countdown() {
+        var target = new Date("2026-05-08T20:00:00+05:30").getTime();
+        var days = document.getElementById("cd-days");
+        var hours = document.getElementById("cd-hours");
+        var mins = document.getElementById("cd-minutes");
+        var secs = document.getElementById("cd-seconds");
+
+        function update() {
+          var now = Date.now();
+          var diff = Math.max(0, target - now);
+          var d = Math.floor(diff / 86400000);
+          var h = Math.floor((diff % 86400000) / 3600000);
+          var m = Math.floor((diff % 3600000) / 60000);
+          var s = Math.floor((diff % 60000) / 1000);
+          days.textContent = d < 10 ? "0" + d : d;
+          hours.textContent = h < 10 ? "0" + h : h;
+          mins.textContent = m < 10 ? "0" + m : m;
+          secs.textContent = s < 10 ? "0" + s : s;
+        }
+
+        update();
+        setInterval(update, 1000);
+      })();
+    </script>
+  </body>
 </html>
